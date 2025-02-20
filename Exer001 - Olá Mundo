@@ -1,0 +1,4 @@
+#Primeiro código do curso: Escreva na tela "Olá Mundo"
+
+msg='Ola Mundo!'
+print(msg)
