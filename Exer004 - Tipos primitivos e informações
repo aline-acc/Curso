@@ -1,0 +1,12 @@
+#Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
+
+vardigitado= input ('Digite algo:')
+
+print ('O tipo primitivo de {:-^5} é:'.format(vardigitado), type(vardigitado))
+print ('Só tem espacos em {:-^5}?'.format(vardigitado), vardigitado.isspace())
+print ('{:-^5} é um número?'.format(vardigitado), vardigitado.isnumeric())
+print ('{:-^5} é alfabético?'.format(vardigitado), vardigitado.isalpha())
+print ('{:-^5} é alfanumérico?'.format(vardigitado), vardigitado.isalnum())
+print ('{:-^5} esta em maiúsculas?'.format(vardigitado), vardigitado.isupper())
+print ('{:-^5} esta em minúscula?'.format(vardigitado), vardigitado.islower())
+print ('{:-^5} esta capitalizada?'.format(vardigitado), vardigitado.istitle()) #primeira maiúscula e demais minúscula
