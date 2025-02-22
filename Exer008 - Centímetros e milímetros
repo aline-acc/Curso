@@ -1,0 +1,6 @@
+#Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+nummetros = int (input('Digite os metros: '))
+centimetros = nummetros * 100
+milimetros = nummetros * 1000
+print ('O total em centimetros é: {}'.format(centimetros))
+print ('O total em milimetros é: {}'.format(milimetros))
