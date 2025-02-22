@@ -1,0 +1,4 @@
+#Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+valorcarteira = float (input('Digite o valor da carteira em reais:'))
+valordolar =  valorcarteira * 5.69
+print ('O valor em dolares é:{:.3}'.format(valordolar))
