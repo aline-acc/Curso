@@ -1,0 +1,7 @@
+from pygame import mixer, quit, mixer_music
+mixer.init()
+mixer.music.load('exer021.mp3')
+mixer_music.play()
+while mixer.music.get_busy():
+    continue
+quit()
