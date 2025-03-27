@@ -1,0 +1,20 @@
+#Exercício Python 22: Crie um programa que leia o nome completo de uma pessoa e mostre:
+#– O nome com todas as letras maiúsculas e minúsculas.
+#– Quantas letras ao todo (sem considerar espaços).
+#– Quantas letras ao todo (sem considerar espaços).
+#– Quantas letras tem o primeiro nome.
+
+nome = str (input('Digite seu nome completo:'))
+
+print ('Analisando seu nome...')
+print ('Seu nome em maiúsculas é: {}'.format(nome.upper()))
+print ('Seu nome em minúsculas é: {}'.format(nome.lower()))
+
+letrasnome = len(nome) #Devolve o comprimento (o número de itens) de um objeto
+qtdespaco =  nome.count(' ') #Conta quantos espacos possui
+qtdletras = letrasnome - qtdespaco #eliminando os espacos
+print (f'Seu nome ao todo possui {qtdletras} letras')
+
+primeironome = nome.split() #Retorna uma lista de palavras na string
+print ('Seu primeiro nome é {} e possui {} letras.'.format(primeironome[0], len(primeironome[0])))
+#retorna a posicao 0 na lista e depois informa o tamanho da palavra na posicao 0 da lista.
