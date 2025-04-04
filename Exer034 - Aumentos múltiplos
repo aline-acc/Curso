@@ -1,0 +1,10 @@
+#Exercício Python 034: Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
+# Para salários superiores a R$1250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%.
+
+sal = float (input ('Digite seu salário: '))
+aumento10 = sal + (sal*10/100)
+aumento15 = sal + (sal*15/100)
+if sal <= 1250:
+    print (f'Seu novo salário será R${aumento15}')
+else:
+    print (f'Seu novo salário será R${aumento10}')
